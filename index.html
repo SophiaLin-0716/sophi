@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>版面配置示範</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      text-align: center;
+    }
+
+    header, footer {
+      background-color: white;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      height: 400px;
+    }
+
+    nav {
+      background-color: #ffffe0; /* 淡黃色 */
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    main {
+      background-color: #d3d3d3; /* 淺灰色 */
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    aside {
+      background-color: #ffc0cb; /* 粉紅色 */
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>首頁</header>
+
+  <div class="container">
+    <nav>導覽列</nav>
+    <main>主要內容</main>
+    <aside>側邊欄</aside>
+  </div>
+
+  <footer>頁尾</footer>
+</body>
+</html>
