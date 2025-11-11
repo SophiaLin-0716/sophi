@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>練習表</title>
+</head>
+<body>
+    <dl>
+        <dt><b>影集一 主題</b></dt>
+        <dd>以黑幫兄弟、復仇與正義為主軸，劇情緊湊。</dd>
+
+        <dt><b>影集二 故事</b></dt>
+        <dd>以平凡人為中心，探討道德與人性之間的界線。</dd>
+
+        <dt><b>類別 工作</b></dt>
+        <dd>中性戲劇，角色鮮明；主角期年輕，主線鋪不算？</dd>
+
+        <dt><b>名稱 內容</b></dt>
+        <dd>美人探謎篇，深坐懸案篇；但見濃霧霧，不知心誰屬？</dd>
+    </dl>
+</body>
+</html>
