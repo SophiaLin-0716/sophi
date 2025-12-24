@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 網站架構</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+  body {
+    background-color: #fdf6ee;  
+    color: #5a3e2b;         
+  }
+
+  .navbar,
+  .bg-dark {
+    background-color: #c89b6d !important; 
+  }
+
+  .navbar-dark .navbar-brand,
+  .navbar-dark .nav-link {
+    color: #fff !important;
+  }
+
+  .navbar-dark .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: #5a3e2b;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e6d3b1;
+  }
+
+  .btn-outline-primary {
+    color: #a97142;
+    border-color: #a97142;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #a97142;
+    color: #fff;
+    border-color: #a97142;
+  }
+
+  /* footer（取代 bg-dark） */
+  footer.bg-dark {
+    background-color: #5a3e2b !important;
+  }
+
+  footer a {
+    color: #f5e6d3;
+  }
+
+  footer a:hover {
+    color: #ffffff;
+  }
+  div[style*="background-image"] {
+    height: 250px;
+    width: 550px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">好吃麵包</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="切換導航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="#feature">特色</a></li>
+            <li class="nav-item"><a class="nav-link" href="#content">內容</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-5 fw-bold">一口咬下<br>滿是麥香的溫度</h1>
+            <p class="lead">
+                使用天然酵母、長時間低溫發酵，  
+                為你烤出最純粹的歐式麵包。</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded  p-5 text-center" style="background-image: url(bread.jpg);" ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feature" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">🥖健康歐包的三大優點</h2>
+          <p class="text-muted">簡單的麵包，給你剛剛好的健康</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">高纖維｜更有飽足感</h5>
+                <p class="card-text">全麥、雜糧製作，促進消化，吃得久不易餓</p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a class="btn btn-outline-primary" href="#">瞭解更多</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">低油低糖｜少負擔</h5>
+                <p class="card-text">配方單純，熱量較低，身體更輕盈</p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a class="btn btn-outline-primary" href="#">瞭解更多</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">營養豐富｜自然原味</h5>
+                <p class="card-text">富含維生素與礦物質，吃得安心又健康</p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a class="btn btn-outline-primary" href="#">瞭解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="p-4 bg-white border rounded h-100">
+              <h3 class="fw-bold">人氣商品</h3>
+              <p class="text-muted">原味鄉村麵包、核桃葡萄歐包、黑麥酸種麵包，都是每日現烤。</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 bg-white border rounded h-100">
+              <h4 class="fw-bold">期間限定</h4>
+              <p class="text-muted">秋季限定南瓜歐包，數量有限，售完為止。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">&copy; 2026 Bootstrap 網站架構</p>
+      <div class="d-flex gap-3">
+        <a class="text-white text-decoration-none" href="#">隱私權政策</a>
+        <a class="text-white text-decoration-none" href="#">服務條款</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
